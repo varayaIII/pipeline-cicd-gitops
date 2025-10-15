@@ -55,6 +55,7 @@ pipeline-cicd-gitops/
 
         ArgoCD detectará los cambios y desplegará automáticamente.
 
-    Verifica el despliegue:
+
+Verifica el despliegue:
 
 kubectl get pods,svc
