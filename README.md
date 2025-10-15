@@ -17,20 +17,22 @@ Módulo demostrativo de **integración y entrega continua declarativa (CI/CD)** 
 
 ---
 
-## Estructura del proyecto
+## 📂 Estructura del proyecto
 
 pipeline-cicd-gitops/
-│── manifests/
+│
+├── 📁 manifests/
 │ ├── deployment.yaml
 │ ├── service.yaml
 │ ├── kustomization.yaml
-│── .github/workflows/
+│
+├── 📁 .github/workflows/
 │ ├── build.yml
 │ ├── sync.yml
-│── Dockerfile
-│── Makefile
-│── README.md
-
+│
+├── Dockerfile
+├── Makefile
+└── README.md
 
 ---
 
