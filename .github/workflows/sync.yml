@@ -1,1 +1,17 @@
+name: argocd-sync
+
+on:
+  workflow_run:
+    workflows: ["build"]
+    types: [completed]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger ArgoCD Sync
+        run: |
+          curl -k -X POST \
+            -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}" \
+            https://argocd.example.com/api/v1/applications/nginx-app/sync
 
